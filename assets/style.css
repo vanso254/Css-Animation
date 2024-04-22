@@ -1,0 +1,45 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: #393;
+
+  /* Animation specifications */
+  -webkit-animation-name: slide;
+  animation-name: slide;
+
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+
+  -webkit-animation-iteration-count: 3;
+  animation-iteration-count: 3;
+
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+
+}
+
+@-webkit-keyframes slide {
+  to {
+    -webkit-transform: translate(600px, 0);
+    -ms-transform: translate(600px, 0);
+    transform: translate(600px, 0);
+  }
+}
+
+@keyframes slide {
+  to {
+    -webkit-transform: translate(600px, 0);
+    -ms-transform: translate(600px, 0);
+    transform: translate(600px, 0);
+  }
+}
+
+button {
+  padding: 0.5em 1em;
+  border: 1px solid #999;
+  border-radius: 5%;
+  margin-top: 3em;
+}
